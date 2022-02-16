@@ -1,0 +1,10 @@
+<div class="bg-light mb-2 p-1">
+    <div>
+        <h3>{{task.title}}</h3>
+        <p>{{task.time}}</p>
+        <input type="checkbox" name="reminder" id="remider" checked="{{task.reminder}}">
+    </div>
+    <div>
+        <button class="btn btn-danger" (click)="deleteTask(task.id)">Delete</button>
+    </div>
+</div>
